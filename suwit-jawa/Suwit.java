@@ -1,20 +1,38 @@
 import java.util.Scanner;
-
-import javax.sound.midi.SysexMessage;
-
 import java.util.Random;
 
 public class Suwit {
     public static void main(String[] args) {
-        System.out.println("============ SUWIT JAVA ============");
-        var user = inputUser();
-        var computer = inputComputer();
 
-        System.out.print(user);
-        System.out.print(" VS ");
-        System.out.println(computer);
-        System.out.println("Hasil :");
-        determinant(user, computer);
+        var main = true;
+
+        while (main) {
+            Scanner input = new Scanner(System.in);
+
+            System.out.println("============ SUWIT JAVA ============");
+            var user = inputUser();
+            var computer = inputComputer();
+
+            if (user == null) {
+                System.out.println("=====================================");
+                System.out.println("Pilihan anda tidak dapat bertarung!");
+                System.out.println("=====================================");
+            } else {
+                System.out.print(user);
+                System.out.print(" VS ");
+                System.out.println(computer);
+                System.out.println("Hasil :");
+                determinant(user, computer);
+            }
+
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("Main lagi?");
+            System.out.print("Jawab : ");
+            main = input.nextBoolean();
+        }
+
     }
 
     static String inputUser() {
