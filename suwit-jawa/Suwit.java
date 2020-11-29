@@ -7,11 +7,17 @@ import java.util.Random;
 public class Suwit {
     public static void main(String[] args) {
         System.out.println("============ SUWIT JAVA ============");
-        // inputUser();
-        inputComputer();
+        var user = inputUser();
+        var computer = inputComputer();
+
+        System.out.print(user);
+        System.out.print(" VS ");
+        System.out.println(computer);
+        System.out.println("Hasil :");
+        determinant(user, computer);
     }
 
-    static void inputUser() {
+    static String inputUser() {
         Scanner input = new Scanner(System.in);
         System.out.println("gajah | semut | orang");
         System.out.print("pilihan anda : ");
@@ -20,15 +26,12 @@ public class Suwit {
         String PilihanFinal;
         switch (pilihan) {
             case "gajah":
-                System.out.println("anda memilih gajah!");
                 PilihanFinal = "gajah";
                 break;
             case "orang":
-                System.out.println("anda memilih orang!");
                 PilihanFinal = "orang";
                 break;
             case "semut":
-                System.out.println("anda memilih semut!");
                 PilihanFinal = "semut";
                 break;
             default:
@@ -42,9 +45,10 @@ public class Suwit {
                 break;
         }
 
+        return PilihanFinal;
     }
 
-    static void inputComputer() {
+    static String inputComputer() {
         Random rand = new Random();
         int randNumber = rand.nextInt(10);
 
@@ -57,7 +61,36 @@ public class Suwit {
             pilihanFinal = "semut";
         }
 
-        System.out.println(pilihanFinal);
+        return pilihanFinal;
     }
 
+    static void determinant(String user, String computer) {
+        if (user == "gajah") {
+            if (computer == "semut") {
+                System.out.println("Anda kalah");
+            } else if (computer == "orang") {
+                System.out.println("Anda menang");
+            } else {
+                System.out.println("Hasil seri");
+            }
+        } else if (user == "orang") {
+            if (computer == "semut") {
+                System.out.println("Anda menang");
+            } else if (computer == "gajah") {
+                System.out.println("Anda kalah");
+            } else {
+                System.out.println("Hasil seri");
+            }
+        } else if (user == "semut") {
+            if (computer == "orang") {
+                System.out.println("Anda kalah");
+            } else if (computer == "gajah") {
+                System.out.println("Anda menang");
+            } else {
+                System.out.println("Hasil seri");
+            }
+        } else {
+            System.out.println("Pilihan anda tidak dapat bertarung!");
+        }
+    }
 }
