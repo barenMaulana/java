@@ -1,7 +1,4 @@
-// Penulis : Baren maulana
-// kelas : 12 RPL 2
-// Deskripsi : Program terminal kalkulator sederhana menggunakan bahasa java
-//============================================================================================
+package terminalcalculator;
 
 import java.util.Scanner;
 
