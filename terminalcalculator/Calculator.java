@@ -60,5 +60,6 @@ public class Calculator {
             System.out.println("Tidak ada pilihan yang cocok");
         }
         System.out.println("Program selesai");
+        input.close();
     }
 }

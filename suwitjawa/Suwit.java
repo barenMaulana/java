@@ -33,8 +33,9 @@ public class Suwit {
             System.out.println("Main lagi?");
             System.out.print("Jawab : ");
             main = input.nextBoolean();
-        }
 
+            input.close();
+        }
     }
 
     static String inputUser() {
@@ -64,7 +65,7 @@ public class Suwit {
                 PilihanFinal = null;
                 break;
         }
-
+        input.close();
         return PilihanFinal;
     }
 

@@ -34,6 +34,8 @@ public class Herbivora {
                 System.out.println("pilihan anda tidak sesuai penawaran!");
                 break;
         }
+
+        input.close();
     }
 
     static void soalMudah() {
@@ -64,6 +66,8 @@ public class Herbivora {
                 System.out.println("maaf jawaban anda kurang tepat, yang benar adalah : " + jawaban);
                 break;
         }
+
+        input.close();
     }
 
     static void soalSedang() {
@@ -95,6 +99,8 @@ public class Herbivora {
                 System.out.println("maaf jawaban anda kurang tepat, yang benar adalah : " + jawaban);
                 break;
         }
+
+        input.close();
     }
 
     static void soalSusah() {
@@ -128,5 +134,7 @@ public class Herbivora {
                 System.out.println("maaf jawaban anda kurang tepat, yang benar adalah : " + jawaban);
                 break;
         }
+
+        input.close();
     }
 }
