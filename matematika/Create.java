@@ -17,6 +17,8 @@ class Create {
         System.out.println("==================================");
         System.out.println("=== " + judul + " ===");
         System.out.println("==================================");
+        System.out.println("");
+        System.out.println("");
         System.out.println("Pertanyaan : ");
         System.out.println(soal);
         System.out.print("Jawab : ");

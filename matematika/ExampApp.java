@@ -1,3 +1,4 @@
+
   /**
  * Write a description of class ExampApp here.
  *
@@ -9,8 +10,27 @@ import java.util.Scanner;
 
 public class ExampApp
 {
+    
+    String nama;
+    
+        public ExampApp(String namaUser){
+        nama = namaUser;
+    }
+    
     public static void main(String args[]){
         Scanner input = new Scanner(System.in);
+        System.out.println("nama anda : ");
+        var namaUser = input.nextLine();
+        
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        
+        ExampApp obj = new ExampApp(namaUser);
+        System.out.println("Selamat datang " + obj.nama);
+        
+
         
         //beri pilihan ke user
         System.out.println("Pilih tingkat level");
@@ -36,4 +56,6 @@ public class ExampApp
          System.out.println("Pilihan tidak tersedia!");
         }
     }
+    
+
 }
