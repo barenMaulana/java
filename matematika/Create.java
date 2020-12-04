@@ -1,3 +1,4 @@
+package matematika;
 
 /**
  * Write a description of class Create here.
@@ -33,4 +34,3 @@ class Create {
         input.close();
     }
 }
-
