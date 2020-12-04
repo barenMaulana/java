@@ -7,7 +7,7 @@ public class App extends Dapur {
     }
 
     public static void main(String[] args) {
-        Dapur masak = new Dapur();
+        Dapur masak = new App();
         masak.chef();
     }
 
