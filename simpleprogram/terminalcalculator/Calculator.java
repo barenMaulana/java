@@ -1,4 +1,4 @@
-package terminalcalculator;
+package simpleprogram.terminalcalculator;
 
 import java.util.Scanner;
 

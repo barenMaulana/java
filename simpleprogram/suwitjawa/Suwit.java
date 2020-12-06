@@ -1,4 +1,4 @@
-package suwitjawa;
+package simpleprogram.suwitjawa;
 
 import java.util.Scanner;
 import java.util.Random;

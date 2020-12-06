@@ -1,4 +1,4 @@
-package hewan;
+package simpleprogram.hewan;
 
 import java.util.Scanner;
 

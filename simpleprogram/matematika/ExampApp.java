@@ -1,4 +1,4 @@
-package matematika;
+package simpleprogram.matematika;
 
 /**
  * Write a description of class ExampApp here.

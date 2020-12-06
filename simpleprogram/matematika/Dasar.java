@@ -1,4 +1,4 @@
-package matematika;
+package simpleprogram.matematika;
 
 class Dasar {
     static void soalDasar() {
