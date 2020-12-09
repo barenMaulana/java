@@ -1,4 +1,4 @@
-package oop.stacktraceeLement;
+package oop.stacktraceelement;
 
 public class App {
     public static void main(String[] args) {
