@@ -12,7 +12,6 @@ public class App {
         String result3 = new String(result2);
         System.out.println(result2);
         System.out.println(result3);
-
     }
 
 }
